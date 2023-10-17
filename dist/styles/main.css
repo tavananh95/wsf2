@@ -13,7 +13,7 @@ body {
 
 .container {
     width: 960px;
-    margin: 0 auto;
+    margin: 0px 147px;
 }
 
 @media screen and (max-width: 960px) {
@@ -22,9 +22,39 @@ body {
     }
 }
 
-#header { 
-    padding: 30px 0;
-    background: #ffda79;
-    text-align: center;
+#header div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+#tagline {
+    color: #DF6951;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#heading {
+    color: var(--1st, #181E4B);
+    font-family: Volkhov;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 89px;
+    letter-spacing: -3.36px;
+    margin-top: 24px;
+}
+
+#desc {
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 30px;
 }
