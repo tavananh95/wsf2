@@ -1,0 +1,69 @@
+:root {
+    --desktop-width: 960px;
+    --tablet-width: 480px;
+    --bloc-margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexContainer>div {
+    margin: 10px 0;
+    padding: 10px;
+    background: navajowhite;
+}
+
+.bloc1-2 {
+    width: calc(50% - 2 * var(--bloc-margin));
+}
+
+.bloc1-3 {
+    width: calc(100% / 3 - 2 * var(--bloc-margin));
+}
+
+.bloc1-4 {
+    width: calc(25% - 2 * var(--bloc-margin));
+    ;
+}
+
+.bloc1-6 {
+    width: calc(100% / 6 - 2 * var(--bloc-margin));
+}
+
+.bloc2-3 {
+    width: calc(100% / 3 * 2 - 2 * var(--bloc-margin));
+}
+
+@media screen and (max-width: var( --desktop-width)) {
+    .bloc1-3 {
+        width: calc(50% - 2 * var(--bloc-margin));
+
+    }
+
+    .bloc1-6 {
+        width: calc(25% / 6 - 2 * var(--bloc-margin));
+    }
+
+    .bloc2-3 {
+        width: calc(100% - 2 * var(--bloc-margin));
+    }
+}
+
+@media screen and (max-width: var( --tablet-width)) {
+    .flexContainer {
+        width: 100%;
+    }
+
+    .flexContainer > div {
+        width: calc(100% - 2 * var(--bloc-margin));
+    }
+
+}
