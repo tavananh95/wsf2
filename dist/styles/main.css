@@ -7,19 +7,41 @@ body {
     padding: 0;
     color: #666;
     font-size: 1.6rem;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Gabarito', sans-serif;
+    background-image: url("../images/Decore.png");
+    background-repeat: no-repeat;
+    background-position: right;
 
 }
 
 .container {
-    width: 960px;
     margin: 0px 147px;
 }
 
-@media screen and (max-width: 960px) {
-    .container {
-        width: 480px;
-    }
+.menuList {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuList li {
+    list-style: none;
+    margin: 0px 20px;
+    color: #212832;
+}
+
+a {
+    text-decoration: none;
+}
+
+#signUp {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+#header {
+    padding: 40px 0px;
+    margin-bottom: 60px;
 }
 
 #header div.container {
@@ -30,7 +52,7 @@ body {
 
 #tagline {
     color: #DF6951;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -39,22 +61,84 @@ body {
 }
 
 #heading {
-    color: var(--1st, #181E4B);
-    font-family: Volkhov;
-    font-size: 84px;
+    color: #181E4B;
+    font-family: 'Volkhov', serif;
+    font-size: 80px;
     font-style: normal;
     font-weight: 700;
     line-height: 89px;
     letter-spacing: -3.36px;
-    margin-top: 24px;
+    margin: 20px 0px;
+}
+
+#enjoy {
+    position: relative;
+}
+
+#enjoy::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 200px;
+    height: 12px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(238, 111, 87, 0.5);
+    z-index: -1;
+}
+
+{
+
 }
 
 #desc {
     color: #5E6282;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    margin-top: 30px;
+    display: flex;
+    width: 400px;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+#travellerPhoto {
+    position: absolute;
+
+}
+
+#buttonLine {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.button {
+    border-radius: 10px;
+    background: #F1A501;
+    box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+    width: 170px;
+    height: 60px;
+    flex-shrink: 0;
+    padding: 15px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 18px;
+}
+
+#playButton {
+    margin-top: -10px;
+    margin-left: 25px;
+}
+
+#playDemo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 480px;
+    }
 }

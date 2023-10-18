@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+main.container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .flexContainer {
     display: flex;
